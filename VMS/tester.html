@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>VMS - Test</title>
+
+	<script type="text/javascript" language="javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script type="text/javascript" charset="utf-8">
+	$(document).ready(function(){
+    $(".up,.down").click(function(){
+        var row = $(this).parents("tr:first");
+        if ($(this).is(".up")) {
+            row.insertBefore(row.prev());
+        } else {
+            row.insertAfter(row.next());
+        }
+    });
+});
+</script>
+</head>
+<body>
+<table>
+    <tr>
+        <td>One</td>
+        <td>
+            <a href="#" class="up">Up</a>
+            <a href="#" class="down">Down</a>
+        </td>
+    </tr>
+    <tr>
+        <td>Two</td>
+        <td>
+            <a href="#" class="up">Up</a>
+            <a href="#" class="down">Down</a>
+        </td>
+    </tr>
+    <tr>
+        <td>Three</td>
+        <td>
+            <a href="#" class="up">Up</a>
+            <a href="#" class="down">Down</a>
+        </td>
+    </tr>
+    <tr>
+        <td>Four</td>
+        <td>
+            <a href="#" class="up">Up</a>
+            <a href="#" class="down">Down</a>
+        </td>
+    </tr>
+    <tr>
+        <td>Five</td>
+        <td>
+            <a href="#" class="up">Up</a>
+            <a href="#" class="down">Down</a>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>

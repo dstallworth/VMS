@@ -1,0 +1,90 @@
+body {
+	margin: 0;	
+}	
+
+.data {
+	font-size:9pt;
+}
+
+.header {
+	font-size:10pt;
+	font-weight: bold;
+}
+
+#wrapper {
+	position: fixed;
+	width: 100%;
+	height: 100%;	
+}
+
+#startBar {
+	position: absolute;
+	width: 100%;
+	height: 30px;
+	background: #00F;
+}
+
+#toolBar {
+	position: absolute;
+	width: 100%;
+	height: 30px;
+	background: #000;
+}
+
+#bar1 {
+	position: absolute;
+	left: 0%;
+	width: 33.3%;
+	height: 30px;
+	background: #0000FF;
+	color: #FFF;
+}
+
+#bar2 {
+	position: absolute;
+	left: 33.3%;
+	width: 33.3%;
+	height: 30px;
+	background: #000;
+	color: #FFF;
+}
+
+#bar3 {
+	position: absolute;
+	left: 66.7%;
+	width: 33.3%;
+	height: 30px;
+	background: #0000FF;
+	color: #FFF;
+}
+
+#startMenu {
+	position: absolute;
+	top: 30px;
+	width: 100%;
+	height: 0px;
+	background: #000;
+}
+
+#app1 {
+	position: absolute;
+	width: 33.3%;
+	height: 100px;
+	background: #F00;
+}
+
+#app2 {
+	position: absolute;
+	top: 100px;
+	width: 33.3%;
+	height: 100px;
+	background: #F00;
+}
+
+#app3 {
+	position: absolute;
+	top: 200px;
+	width: 33.3%;
+	height: 100px;
+	background: #F00;
+}

@@ -1,0 +1,127 @@
+* 									{ margin: 0; padding: 0; }
+/*body								{ font: 14px Helvetica, Sans-Serif; } */
+#page-wrap							{ z-index: 99; width: 100%; margin: 0px auto auto 0px; } 
+/*a									{ text-decoration: none; }*/
+ul									{ list-style: none; }
+p                                   { margin: 15px 0; }
+.datatable 							{	font-size: 8pt;	}
+
+#loginMessage						{ width: 100%; text-align: center; color: #ff0000; font-size: 12pt;}
+#logout								{ padding: 3px 35px 0px 0px; text-align: right; color: #000000; font-size: 11pt; font-weight: bold;}
+#logout a							{ color: #000000; font-size: 11pt; font-weight: bold; text-decoration: none;}
+#logout a:hover						{ color: #ff0000; font-size: 11pt; font-weight: bold; text-decoration: none;}
+#welcome							{ position: relative; top: -70px; z-index: 501; padding-right: 25px; text-align: right; color: #ffffff; font-size: 11pt; font-weight: bold;}
+#org								{ position: relative; top: -70px; left: 25px; z-index: 501; padding-right: 25px; text-align: right; color: #ffffff; font-size: 11pt; font-weight: bold;}
+#messageBox							{ position: absolute; float:center; width:300px; height: 200px; left:40%; top:-200px; background-color: #ccc; color: #000; z-index:1000; text-align: center;}
+#messageBoxText						{ padding: 30px 40px 30px 40px;}
+#copyToBox							{ position: absolute; float:center; width:300px; height: 104px; right:0px; top:-104px; background-color: #efefef; z-index:1000; text-align: center; font-size: 10pt;}
+#copyToBoxText						{ padding: 10px 0px 0px 0px;}
+#copyToBoxClose						{ float: right;}
+#main_wrapper 						{ z-index: -1; }	
+#vidDetails							{ float: left; padding: 0px 0px 0px 40px; overflow: auto;}
+#vidDetailsTabs						{ float: left;  height: 330px; padding: 10px 10px 0px 0px; font-size:8pt;  }
+#vidPreview							{ float: center; padding: 0px 30px 0px 30px; overflow: auto;}
+#articleDetails						{ width: 80%; margin-left: auto; margin-right: auto; overflow: auto;}
+#buttons							{ float: left; width: 40%; padding: 0px 0px 0px 20px; word-wrap: break-word;}
+#image								{ border: none; height: auto; width: auto; float: left }
+#image img							{ display: inline; padding: 0px 15px 15px 15px; border: none;}
+#image a 							{ text-decoration: none; border: none;}
+#snapshot							{ float: right; width: 55%; padding: 0px 10px 0px 0px;}
+#mytabs								{ width: 96%; padding: 5px 15px 5px 25px; border: none;}
+#detailtabs							{ padding: 5px 15px 5px 25px;}
+#dialog								{ font-size: 10px;}
+#changePwdDialog					{ font-size: 12px;}
+.detailTabLabel						{ font-weight: bold; }
+.pageTitle							{ font-size: 18pt; font-weight: bold; padding: 0px 0px 0px 20px; width: 96%; background-color: #999999;}
+.channelLabel						{ font-size: 12pt; font-weight: bold;}
+.channelTitle						{ font-size: 16pt; font-weight: bold; align:left; color: #ff0000;}
+.channelTitle a						{ text-decoration: none; color: #ff0000;}
+.detailLabel						{ font-size: 12pt; font-weight: bold; whitespace: nowrap;}
+.detailTitle						{ font-size: 16pt; font-weight: bold; align:left; color: #ff0000; whitespace: nowrap;}
+.detailTitle a						{ text-decoration: none; color: #ff0000;}
+.videoDetailsLabel					{ font-size: 10pt; font-weight: bold;}
+.videoDetailsHeader					{ font-size: 12pt; font-weight: bold;}
+.videoCreation						{ font-size: 12pt; font-weight: bold; whitespace: nowrap; text-align: justify; text-justify: newspaper;}
+#logo								{ position: relative; height: 35px; width: 100%; background: url('../images/header_bg.png') repeat-x;  }
+#logo img							{ display: inline; margin: 8px 0px auto 10px; }
+#logo2 						{ position: relative; top: -37px; left: 165px; z-index: 500; }
+#channels							{ width: 70%; align: center; font-size: 16pt;}
+#channels a:link, a:visited			{ color: #000;}
+#saveOrdering						{ width: 100%; text-align: left; color: #ff0000; font-size: 9pt;}
+#saveOrdering a						{ font-size: 10pt; font-weight: bold; cursor: hand; color: #ff0000;}
+#saveChannelOrdering				{ width: 100%; text-align: left; color: #ff0000; font-size: 9pt;}
+#saveChannelOrdering a				{ font-size: 9pt; font-weight: bold; cursor: hand; color: #ff0000;}
+#subChannelFont						{ font-size: 8pt;}
+/*tr.myDragClass td 					{ color: black; background-color: red;}*/
+
+/* 
+	LEVEL ONE
+*/
+.dropdown							{ z-index: 99;}
+ul.dropdown                         { position: absolute; left: 0px; padding-left: 10px; width: 100%; background: #ccc; }
+ul.dropdown li                      { font-weight: bold; float: left; zoom: 1; background: #ccc; }
+ul.dropdown a:hover		            { color: #000; }
+ul.dropdown a:active                { color: #000; }
+ul.dropdown li a                    { display: block; padding: 4px 8px; border-right: 1px solid #333;
+	 								  color: #000; text-decoration: none;}
+ul.dropdown li:last-child a         { border-right: none; text-decoration: none;} /* Doesn't work in IE */
+ul.dropdown li.hover,
+ul.dropdown li:hover                { background: #a40000; color: black; position: relative; }
+ul.dropdown li.hover a              { color: black; text-decoration: none;}
+
+
+/* 
+	LEVEL TWO
+*/
+ul.dropdown ul 						{ width: 220px; visibility: hidden; position: absolute; top: 100%; left: 0; }
+ul.dropdown ul li 					{ font-weight: normal; background: #ccc; color: #000; 
+									  border-bottom: 1px solid #000; float: none;  }
+									  
+                                    /* IE 6 & 7 Needs Inline Block */
+ul.dropdown ul li a					{ border-right: none; width: 100%; display: inline-block; text-decoration: none;} 
+
+/* 
+	LEVEL THREE
+*/
+ul.sub_menu ul li					{ background: #ccc;}
+ul.dropdown ul ul 					{ left: 100%; top: 0; }
+ul.dropdown li:hover > ul 			{ visibility: visible; }
+
+
+#sortable1, #sortable2 { list-style-type: none; margin: 0; padding: 0; float: left; margin-right: 10px; }
+#sortable1 li, #sortable2 li { margin: 0 5px 5px 5px; padding: 5px; font-size: 1.2em; width: 120px; }
+
+input.editable-select {
+  background: #FFF url(arrow-down.gif) right center no-repeat;
+  padding-right: 13px;
+}
+.editable-select-options {
+  position: absolute;
+  display: none;
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+  background: #FFF;
+  border: 1px solid #CCC;
+  z-index: 10;
+}
+.editable-select-iframe {
+  position: absolute;
+  background: #FFF;
+  z-index: 9;
+  display: none;
+}
+  .editable-select-options ul {
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+    list-style: none;
+    list-style-image: none;
+  }
+    .editable-select-options li {
+      cursor: default;
+      padding: 2px;
+    }
+    .editable-select-options li.selected {
+      background: #EAEAEA;
+    }
